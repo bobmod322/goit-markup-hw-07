@@ -202,14 +202,17 @@ padding-bottom: 40px;}
   border-radius: 50%;
 } 
 /* hero mobile */
-.mob-section-div {width: 428px;height: 432px;
+.mob-section-div {
+  width: 100%;
+  height: 432px;
   background-color: #2e2f42;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)),
     url("../images/hero-section/bg-mob.jpg");
   background-size: cover;
-  padding: 112px 0;}
+  padding: 112px 0;
+}
 
   .mob-text-head {
     font-style: normal;
