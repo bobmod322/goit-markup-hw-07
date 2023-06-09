@@ -36,7 +36,7 @@
 
       <address class="adress-nav">
         <ul class="adress-list list">
-          <li>
+          <li class="adress-link-list">
             <a href="mailto:info@devstudio.com" class="adress-link link">info@devstudio.com</a>
           </li>
           <li>
@@ -105,7 +105,7 @@
     </header>
     <main>
       <!--hero images-1-->
-<section>
+<section class="main-section-effective">
   <div class="mob-section-div container">
     <h1 class="mob-text-head">Effective Solutions for Your Business</h1>
   <button type="button"  class="button-order" data-modal-open>Order Service</button>
@@ -170,13 +170,34 @@
         <h2 class="what-are-head">What are we doing</h2>
         <ul class="what-are-list list">
           <li class="what-are-list-sec">
-            <img src="./images/mainpage/img1.jpg" alt="statistic" width="360" />
+            <picture>
+              <source
+                srcset="
+                  ./images/mainpage/desktop1x.jpg 1x,
+                  ./images/mainpage/desktop@2x.jpg 2x"
+                media="(min-width: 1158px)"/>
+              <img src="./images/mainpage/desktop.jpg" alt="statistic" width="360" height="300"/>
+            </picture>
           </li>
           <li class="what-are-list-sec">
-            <img src="./images/mainpage/img2.jpg" alt="apps" width="360" />
+            <picture>
+              <source
+                srcset="
+                  ./images/mainpage/apps1x.jpg 1x,
+                  ./images/mainpage/apps@2x.jpg 2x"
+                media="(min-width: 1158px)"/>
+              <img src="./images/mainpage/apps.jpg" alt="apps" width="360" height="300"/>
+            </picture>
           </li>
           <li class="what-are-list-sec">
-            <img src="./images/mainpage/img3.jpg" alt="mobile" width="360" />
+            <picture>
+              <source
+                srcset="
+                  ./images/mainpage/mobile1x.jpg 1x,
+                  ./images/mainpage/mobile@2x.jpg 2x"
+                media="(min-width: 1158px)"/>
+              <img src="./images/mainpage/mobile.jpg" alt="mobile" width="360" height="300"/>
+            </picture>
           </li>
         </ul>
       </div>
@@ -187,7 +208,25 @@
       <h2 class="team-head">Our Team</h2>
       <ul class="team-list list">
         <li class="team-list-img">
-          <img srcset="./images/mainpage/mark1x.jpg 1x, ./images/mainpage/mark@2x.jpg 2x" src="./images/mainpage/mark1x.jpg" alt="mark" width="264" />
+<picture>
+  <source
+  srcset="
+    ./images/mainpage/mark-desc1x.jpg 1x,
+    ./images/mainpage/mark-desc@2x.jpg 2x"
+  media="(min-width: 1158px)"/>
+  <source
+  srcset="
+    ./images/mainpage/mark-tabl1x.jpg 1x,
+    ./images/mainpage/mark-tabl@2x.jpg 2x"
+  media="(min-width: 768px)"/>
+  <source
+  srcset="
+    ./images/mainpage/mark-mob1x.jpg 1x,
+    ./images/mainpage/mark-mob@2x.jpg 2x"
+  media="(min-width: 428px)"/>
+
+  <img src="./images/mainpage/mark-mob.jpg" alt="mark" width="264" />
+</picture>
           <div class="team-text-icon">
           <h3 class="team-list-name">Mark Guerrero</h3>
           <p class="team-list-prof">Product Designer</p>
@@ -223,7 +262,26 @@
         </div>
         </li>
         <li class="team-list-img">
-          <img srcset="./images/mainpage/tom1x.jpg 1x, ./images/mainpage/tom@2x.jpg 2x" src="./images/mainpage/tom1x.jpg" alt="tom" width="264" />
+          <picture>
+            <source
+            srcset="
+              ./images/mainpage/tom-desc1x.jpg 1x,
+              ./images/mainpage/tom-desc@2x.jpg 2x"
+            media="(min-width: 1158px)"/>
+            <source
+            srcset="
+              ./images/mainpage/tom-tabl1x.jpg 1x,
+              ./images/mainpage/tom-tabl@2x.jpg 2x"
+            media="(min-width: 768px)"/>
+            <source
+            srcset="
+              ./images/mainpage/tom-mob1x.jpg 1x,
+              ./images/mainpage/tom-mob@2x.jpg 2x"
+            media="(min-width: 428px)"/>
+          
+            <img src="./images/mainpage/tom.jpg" alt="tom" width="264" />
+          </picture>
+
           <div class="team-text-icon">
           <h3 class="team-list-name">Tom Ford</h3>
           <p class="team-list-prof">Frontend Developer</p>
@@ -258,7 +316,26 @@
         </div>
         </li>
         <li class="team-list-img">
-          <img srcset="./images/mainpage/camilia1x.jpg 1x, ./images/mainpage/camilia@2x.jpg 2x" src="./images/mainpage/camilia1x.jpg" alt="camilia" width="264"/>
+
+          <picture>
+            <source
+            srcset="
+              ./images/mainpage/camila-desc1x.jpg 1x,
+              ./images/mainpage/camila-desc@2x.jpg 2x"
+            media="(min-width: 1158px)"/>
+            <source
+            srcset="
+              ./images/mainpage/camila-tabl1x.jpg 1x,
+              ./images/mainpage/camila-tabl@2x.jpg 2x"
+            media="(min-width: 768px)"/>
+            <source
+            srcset="
+              ./images/mainpage/camila-mob1x.jpg 1x,
+              ./images/mainpage/camila-mob@2x.jpg 2x"
+            media="(min-width: 428px)"/>
+          
+            <img src="./images/mainpage/camila.jpg" alt="camilia" width="264" />
+          </picture>
             <div class="team-text-icon">
           <h3 class="team-list-name">Camila Garcia</h3>
           <p class="team-list-prof">Marketing</p>
@@ -293,7 +370,27 @@
         </div>
         </li>
         <li class="team-list-img">
-          <img srcset="./images/mainpage/daniel1x.jpg 1x, ./images/mainpage/daniel@2x.jpg 2x" src="./images/mainpage/daniel1x.jpg" alt="camilia" width="264"/>
+
+          <picture>
+            <source
+            srcset="
+              ./images/mainpage/daniel-desc1x.jpg 1x,
+              ./images/mainpage/daniel-desc@2x.jpg 2x"
+            media="(min-width: 1158px)"/>
+            <source
+            srcset="
+              ./images/mainpage/daniel-tabl1x.jpg 1x,
+              ./images/mainpage/daniel-tabl@2x.jpg 2x"
+            media="(min-width: 768px)"/>
+            <source
+            srcset="
+              ./images/mainpage/daniel-mob1x.jpg 1x,
+              ./images/mainpage/daniel-mob@2x.jpg 2x"
+            media="(min-width: 428px)"/>
+          
+            <img src="./images/mainpage/daniel.jpg" alt="daniel" width="264" />
+          </picture>
+
           <div class="team-text-icon">
           <h3 class="team-list-name">Daniel Wilson</h3>
           <p class="team-list-prof">UI Designer</p>
